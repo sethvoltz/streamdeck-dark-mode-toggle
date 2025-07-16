@@ -1,0 +1,47 @@
+{
+	"Name": "Dark Mode Toggle",
+	"Version": "0.1.0.0",
+	"Author": "Seth Voltz",
+	"Actions": [
+		{
+			"Name": "Toggle Dark Mode",
+			"UUID": "com.voltzmakes.dark-mode-toggle.toggle",
+			"Icon": "imgs/actions/toggle/icon",
+			"Tooltip": "Toggles between OS Light and Dark themes.",
+			"PropertyInspectorPath": "ui/toggle.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Name": "Light Mode",
+					"Image": "imgs/actions/toggle/light"
+				},
+				{
+					"Name": "Dark Mode",
+					"Image": "imgs/actions/toggle/dark"
+				}
+			]
+		}
+	],
+	"Category": "Dark Mode Toggle",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Simple action to toggle light/dark mode in macOS with icon feedback",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.5"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.voltzmakes.dark-mode-toggle"
+}
