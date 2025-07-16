@@ -2,6 +2,8 @@ import { action, KeyAction, KeyDownEvent, SingletonAction, WillAppearEvent, Will
 import darkMode from 'dark-mode';
 
 const UPDATE_INTERVAL = 10 * 1000; // 10 seconds
+const LIGHT_MODE_STATE = 0; // State for light mode
+const DARK_MODE_STATE = 1; // State for dark mode
 
 /**
  * An example action class that displays a count that increments by one each time the button is pressed.
@@ -51,8 +53,17 @@ export class DarkModeToggle extends SingletonAction<ToggleSettings> {
 		// Update the count from the settings.
 		const { settings } = ev.payload;
 
-		// Toggle the dark mode.
-		await darkMode.toggle();
+		if (ev.payload.isInMultiAction) {
+			if (ev.payload.userDesiredState === DARK_MODE_STATE) {
+				await darkMode.enable();
+			} else {
+				await darkMode.disable();
+			}
+		} else {
+			// Toggle the dark mode.
+			await darkMode.toggle();
+		}
+
 		this.updateButtonState(ev.action)
 
 		// Update the current count in the action's settings, and change the title.
@@ -66,9 +77,9 @@ export class DarkModeToggle extends SingletonAction<ToggleSettings> {
 	private async updateButtonState(action: KeyAction): Promise<void> {
 		const isDarkMode = await darkMode.isEnabled();
 		if (isDarkMode) {
-			action.setState(1); // Set state to dark mode
+			action.setState(DARK_MODE_STATE); // Set state to dark mode
 		} else {
-			action.setState(0); // Set state to light mode
+			action.setState(LIGHT_MODE_STATE); // Set state to light mode
 		}
 	}
 }
