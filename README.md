@@ -10,9 +10,11 @@ A simple Stream Deck plugin to toggle dark mode on your system with a single but
 
 ## Installation
 
-1. Download the latest release from the [releases page](#).
+1. Download the latest release from the [releases page](releases-page).
 2. Double-click the `.streamDeckPlugin` file to install.
 3. Add the "Dark Mode Toggle" action to your Stream Deck.
+
+[releases-page]: https://github.com/sethvoltz/streamdeck-dark-mode-toggle/releases/latest
 
 ## Usage
 
