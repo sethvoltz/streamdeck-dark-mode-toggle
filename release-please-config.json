@@ -1,10 +1,14 @@
 {
   "release-type": "node",
-  "extra-files": [
-    {
-      "type": "json",
-      "path": "com.voltzmakes.dark-mode-toggle.sdPlugin/manifest.json",
-      "jsonpath": "$.Version"
+  "packages": {
+    ".": {
+      "extra-files": [
+        {
+          "type": "json",
+          "path": "com.voltzmakes.dark-mode-toggle.sdPlugin/manifest.json",
+          "jsonpath": "$.Version"
+        }
+      ]
     }
-  ]
+  }
 }
