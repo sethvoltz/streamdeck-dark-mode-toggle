@@ -30,7 +30,7 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Build release artifact
-        run: npm run release
+        run: npm install && npm run release
 
       - name: Upload Stream Deck plugin artifact
         if: ${{ steps.release.outputs.upload_url }}
