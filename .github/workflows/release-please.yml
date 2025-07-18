@@ -35,6 +35,8 @@ jobs:
       - name: Upload Stream Deck plugin artifact
         if: ${{ steps.release.outputs.upload_url }}
         uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
           asset_path: release/com.voltzmakes.dark-mode-toggle.streamDeckPlugin
