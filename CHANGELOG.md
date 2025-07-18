@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/compare/v0.3.0...v0.3.1) (2025-07-18)
+
+
+### Bug Fixes
+
+* update package name in package.json ([7eb4f8b](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/commit/7eb4f8bd62bd5f2d3a39779fa3334761642a7324))
+
 ## [0.3.0](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/compare/v0.2.0...v0.3.0) (2025-07-18)
 
 
