@@ -10,9 +10,7 @@ permissions:
 
 jobs:
   automerge:
-    if: |
-      github.actor == 'gha-streamdeck-dark-mode-plugin' &&
-      contains(github.event.pull_request.labels.*.name, 'autorelease: pending')
+    if: contains(github.event.pull_request.labels.*.name, format('autorelease{0} pending', ':'))
     runs-on: ubuntu-latest
     
     steps:
