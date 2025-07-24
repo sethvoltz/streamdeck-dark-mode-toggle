@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.4.0](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/compare/v0.3.1...v0.4.0) (2025-07-24)
+
+
+### Features
+
+* add auto-merge for release-please PRs ([d9bb4a9](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/commit/d9bb4a92e1b7b59bfd31053de38285ba3507c145))
+
+
+### Bug Fixes
+
+* add PR types to filter ([38dc592](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/commit/38dc5927e6c98af86d6ce9e17626edf7a9a86844))
+* add repo and rebase to the mix ([21a45de](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/commit/21a45ded6a0d00e29bc6b3ed410b27ce835ad910))
+* oops, wrong bot name ([833e8c8](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/commit/833e8c8cfaf52d9cd6458a9cf842ac22ce84aa7a))
+* try this again, change condition based on other workflows ([17661b7](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/commit/17661b79cddb4e4b3eeb327146f7ceafdc8553a3))
+
 ## [0.3.1](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/compare/v0.3.0...v0.3.1) (2025-07-18)
 
 
