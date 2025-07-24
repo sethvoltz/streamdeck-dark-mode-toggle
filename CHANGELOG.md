@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/compare/v0.4.0...v0.5.0) (2025-07-24)
+
+
+### Features
+
+* reduce auto-merge triggering events to labels ([792828b](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/commit/792828b6c92d3efa117f95b86554ad0838d39335))
+
 ## [0.4.0](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/compare/v0.3.1...v0.4.0) (2025-07-24)
 
 
