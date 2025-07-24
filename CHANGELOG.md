@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/compare/v0.5.0...v0.5.1) (2025-07-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @elgato/streamdeck to v1.4.0 ([a0e5c7e](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/commit/a0e5c7e61810db9cd23cb5c22c081e482c830ec4))
+
 ## [0.5.0](https://github.com/sethvoltz/streamdeck-dark-mode-toggle/compare/v0.4.0...v0.5.0) (2025-07-24)
 
 
