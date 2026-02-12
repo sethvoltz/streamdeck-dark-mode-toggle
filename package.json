@@ -19,7 +19,7 @@
     },
     "dependencies": {
         "@elgato/streamdeck": "^1.0.0",
-        "dark-mode": "^4.0.0"
+        "dark-mode": "^5.0.0"
     },
     "version": "0.5.1"
 }
